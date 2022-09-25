@@ -1,0 +1,42 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="persistence">
+		<description>Hibernate Entity Manager Example</description>
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>com.journaldev.jpa.hibernate.model.Employee</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="oracle.jdbc.OracleDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:oracle:thin:@//localhost:1521/ANCR" />
+			<property name="javax.persistence.jdbc.user" value="ANAUSR" />
+			<property name="javax.persistence.jdbc.password"
+				value="sopra" />
+
+			<property
+				name="javax.persistence.schema-generation.database.action"
+				value="drop-and-create" />
+
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.Oracle8iDialect" />
+
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.format_sql" value="false" />
+			<property name="hibernate.use_sql_comments" value="false" />
+
+			<property name="hibernate.jdbc.batch_size" value="100" />
+			<property name="hibernate.order_inserts" value="true" />
+			<property name="hibernate.order_updates" value="true" />
+			<property name="hibernate.synonyms" value="true" />
+			<property name="hibernate.connection.autocommit" value="true"/>
+
+
+		</properties>
+
+	</persistence-unit>
+
+</persistence>

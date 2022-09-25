@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   
+   <bean id="smObj" class="in.nareshit.raghu.SecurityMode">
+   		<constructor-arg>
+   			<value>ACTIVE</value>
+   		</constructor-arg>
+   		<constructor-arg>
+   			<value>10</value>
+   		</constructor-arg>
+   		<constructor-arg>
+   			<value>LOGIN</value>
+   		</constructor-arg>
+   </bean>
+
+</beans>

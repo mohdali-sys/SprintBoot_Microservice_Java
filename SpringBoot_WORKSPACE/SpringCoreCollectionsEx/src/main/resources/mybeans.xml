@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pob" class="in.nareshit.raghu.bean.Product">
+		<property name="pid">
+			<value>101</value>
+		</property>
+		<property name="pcode">
+			<value>ABC</value>
+		</property>
+		<property name="colors">
+			<set>
+				<value>RED</value>
+				<value>GREEN</value>
+				<value>BLUE</value>
+				<null></null>
+				<null></null>
+				<null></null>
+				<value>PINK</value>
+			</set>
+		</property>
+		<property name="pdims">
+			<list>
+				<value>18</value>
+				<value>17</value>
+				<null></null>
+				<null></null>
+				<null></null>
+				<value>18</value>
+			</list>
+		</property>
+		<property name="data">
+			<map>
+				<entry key="102" value="B"/>
+				<entry>
+					<key>
+						<value>101</value>
+					</key>
+					<value>A</value>
+				</entry>
+				<entry key="103">
+					<value>C</value>
+				</entry>
+				<entry value="D">
+					<key>
+						<value>104</value>
+					</key>
+				</entry>
+			</map>
+		</property>
+		<property name="info">
+			<props>
+				<prop key="P1">ABC</prop>
+				<prop key="P2">MNO</prop>
+				<prop key="P3">IJK</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

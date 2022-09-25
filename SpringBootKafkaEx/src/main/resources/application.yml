@@ -1,0 +1,39 @@
+my:
+  kafka:
+    tpc-name: SAMPLE-TPC
+
+spring:
+  application:
+    name: Kafka-MQs
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot7pm
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092 
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: my-group
+                 
+        
+        
+    
+server:
+  port: 9696
+  
+  
+
+  
+

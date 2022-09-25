@@ -1,0 +1,12 @@
+1. Deploy war file form war folder in
+
+
+tomcat/webapps
+
+rename the war file to 'ROOT.war'
+
+and then start the tomcat server
+
+
+
+

@@ -1,0 +1,7 @@
+my:
+  app:
+    format: NEW
+    model: ABC
+    pcode: PEN
+    pid: 10
+    version: 5.6

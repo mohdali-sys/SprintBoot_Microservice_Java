@@ -1,0 +1,17 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+  <h3>User Login Page</h3>
+  <form method="post" th:action="@{/login}">
+	<pre>
+		Email: <input type="text" name="username"/>
+		Pwd  : <input type="password" name="password"/>
+		   <button type="submit">Login</button>
+	</pre>
+  </form>
+  <div th:if="${param.error}"> User Login Failed </div>
+  <div th:if="${param.logout}"> User Logout Success </div>
+ </body>
+</html>

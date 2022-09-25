@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: Facebook-Login-ex
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: 589644415972884
+            client-secret: 5834cc995f1ef800a82e12e93c5a8c6c

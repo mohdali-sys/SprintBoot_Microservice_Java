@@ -1,0 +1,106 @@
+amazonsucks@123
+
+max@ecomaxgo.in
+
+
+162.215.240.160
+
+65.0.109.206
+
+Approve the notification sent to:     Email address  m******@ecomaxgo.in
+
+
+
+public DNS : ec2-65-0-109-206.ap-south-1.compute.amazonaws.com
+ubuntu@65.0.109.206
+
+
+ ssh -i "C:/Users/tahamad/Desktop/ancredit/upi.pem" ubuntu@ec2-65-0-109-206.ap-south-1.compute.amazonaws.com
+ 
+ 
+ root@ec2-65-0-109-206.ap-south-1.compute.amazonaws.com
+ 
+ FATAL ERROR: Received unexpected end-of-file from SFTP server Could not connect to server
+ 
+ 
+ 	ec2-65-0-109-206.ap-south-1.compute.amazonaws.com
+	
+	
+===== AWS=========	
+user: root
+ip: 13.232.64.54
+password: t33th123!
+=====================
+
+
+http://13.232.64.54:8080/
+
+UAT API Call:   http://13.232.64.54:8097/generateToken
+
+Local API Call http://localhost:8097/generateToken
+
+ps -ef | grep tomcat
+wmic PROCESS where "name like '%java%'" get Processid,Caption,Commandline
+ps -ef | grep java
+
+pkill -9 -f tomcat
+kill -9 3344
+
+java -jar /opt/api/API.jar
+ss
+
+nohup java -jar /opt/api/API.jar &
+ java -Duser.language=fr -Duser.country=FR
+-Duser.country=CA -Duser.language=fr
+==============json INPUT ========================
+
+{
+"emailId":"kiran.n@olivecrypto.com",
+"merchId":"Olive001",
+"merchChanId":"OLIVEAPP",
+"submerchantid":"674545454",
+"mcccode":"1520",
+"unqCustId":"919032858545",
+"timestamp": "27-01-2018 15:18:57",
+"mobilenumber" :"919032858545",
+"unqTxnId" : "9178998612891517046537354",
+"merchChecksum" :"HmfODbnezH39ydqJfVlh3gLQLcX6AC0JbOidwhfH3yBN5RNeoi53lWJHpHrRHV1A"
+}
+
+
+{
+"emailId":"maxpe@ecomaxgo.in",
+"merchId":"MAXPE",
+"merchChanId":"OLIVEAPP",
+"submerchantid":"674545454",
+"mcccode":"7322",
+"unqCustId":"918143111212",
+"timestamp": "27-01-2018 15:18:57",
+"mobilenumber" :"918143111212",
+"unqTxnId" : "c968eb835a3fa0b6cf4c",
+"merchChecksum" :"cNLMgqN4mldOojfHLWRLthGO8vE/0fJIh6xlcmVC0BrLEqBTicPte4AwdfVt5iVa"
+}
+
+
+
+
+		final String url = "https://upiuat.axisbank.co.in/v1/v2/sdk/servertoken/";
+		Random rand = new Random();
+		String timeStamp = String.valueOf(System.currentTimeMillis());
+		String uniTranId = CommonUtils.hashCal("SHA-256", Integer.toString(rand.nextInt()) + (System.currentTimeMillis() / 1000L)).substring(0, 20);
+		ApiRequest apiRequest = new ApiRequest();
+		apiRequest.setEmailId("maxpe@ecomaxgo.in");
+		apiRequest.setMcccode("7322");
+		apiRequest.setMerchChanId("OLIVEAPP");
+		apiRequest.setMerchId("MAXPE");
+		apiRequest.setMobilenumber("918143111212");
+		apiRequest.setSubmerchantid("OLIVE");
+		apiRequest.setUnqCustId("918143111212");
+	/*	if(apiRequest == null) {
+			throw new Exception("Request body is null");
+		} */
+		apiRequest.setTimestamp(timeStamp);
+		apiRequest.setUnqTxnId(uniTranId);
+		apiRequest = processCalculations.generateCheckSum(apiRequest);
+
+

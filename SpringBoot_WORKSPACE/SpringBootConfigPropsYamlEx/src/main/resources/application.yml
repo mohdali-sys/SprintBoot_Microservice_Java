@@ -1,0 +1,15 @@
+my:
+  app:
+    pid: 10
+    pcost: 200.0
+    pcode: PEN
+    models:
+    - M1
+    - M2
+    - M3
+    info:
+      CLIENT: NIT
+      VERSION: 3.2GA
+    vob:
+      vid: 1119
+      vcode: NIT-HYD
