@@ -1,0 +1,24 @@
+How to Push your own java project into your git repository:-
+==============================================================
+1.Create your repository into GITLab/Github
+2.From yr system directory, open git terminal
+3.git config --global user.name "mohdali-sys"
+4.git config --global user.email "mohdali06861@gmail.com"
+5. git clone "clone url of yr repository where you want to push the code"
+6.goto into yr git repository folder into local system
+like 
+mohd.ali@del1-lhp-n80185 MINGW64 /d/Software/Java-Arshad
+$ cd SprintBoot_Microservice_Java/
+7.git add -A
+8.git commit -m "[mandatory commit message]"
+9.git push [url to your repository]
+
+After that you have to give your user name and password and your commit will be successfully pushed to the main branch of your GitHub repository.
+
+
+How can I give access to a private GitHub repository:-
+If you are the owner it is simple:
+
+Go to your repo and click the Settings button.
+In the left menu click Collaborators
+Then Add their name.
